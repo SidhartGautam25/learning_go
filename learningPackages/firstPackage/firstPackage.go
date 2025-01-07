@@ -26,6 +26,12 @@ package firstPackage
 
 // it is a common practise that entry point of a package is the packageName.go
 // file
+
+// one important things is,diffrent directory in a same module can have files
+// with same package name,but it does not mean that they same packages
+// in go,package is determined by the directory location and not jyt by name,
+// so even if two directory say same package they are diffrent as they
+// have diffrent location
 func Calculate(p float64, r float64, t float64) float64 {
 	interest := p * (r / 100) * t
 	return interest
